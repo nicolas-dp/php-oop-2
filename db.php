@@ -17,12 +17,12 @@ $prodotti = [
 //var_dump($prodotti);
 
 
-$mangime =
+$mangimi =
     [
-        new Mangime('Scaglie di pollo', 'Mangime', 'Next', 12, [' pollo 11%', 'mais', 'riso soffiato 10%', 'frumento', 'grassi animali', 'polpa di barbabietola'], 'Le gustose crocchette Next Normal Maxi sono un alimento completo e funzionale, appositamente studiato per soddisfare le esigenze nutrizionali di cani di taglia grande. Next Dog Normal Maxi è un cibo secco di altissimo valore nutrizionale e presenta un’elevata appetibilità per il tuo amico a quattro zampe', 15)
+        new Mangimi('Scaglie di pollo', 'Mangime', 'Next', 12, [' pollo 11%', 'mais', 'riso soffiato 10%', 'frumento', 'grassi animali', 'polpa di barbabietola'], 'Le gustose crocchette Next Normal Maxi sono un alimento completo e funzionale, appositamente studiato per soddisfare le esigenze nutrizionali di cani di taglia grande. Next Dog Normal Maxi è un cibo secco di altissimo valore nutrizionale e presenta un’elevata appetibilità per il tuo amico a quattro zampe', 15)
 
     ];
-var_dump($mangime);
+//var_dump($mangimi);
 
 $accessori = [
     new Accessori('Ciotole', 'Accessori', 'YES!', 'Ciotola Black Stone Nera', 'Acciaio', 'Ciotola per cani e gatti realizzata in acciaio di colore nero. Design moderno e raffinato', 9),
@@ -30,4 +30,4 @@ $accessori = [
 
 ];
 
-var_dump($accessori);
+//var_dump($accessori);

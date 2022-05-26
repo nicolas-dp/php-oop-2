@@ -1,6 +1,6 @@
-<?php 
-
-class Mangime extends Prodotto {
+<?php
+class Mangimi extends Prodotto
+{
 
     public $marca;
     public $peso;
@@ -8,7 +8,8 @@ class Mangime extends Prodotto {
     public $description;
     public $prezzo;
 
-    function __construct(String $nome_prodotto, String $categoria, String $marca, Int $peso, Array $ingredienti, String $description, Int $prezzo) {
+    function __construct(String $nome_prodotto, String $categoria, String $marca, Int $peso, array $ingredienti, String $description, Int $prezzo)
+    {
         parent::__construct($nome_prodotto, $categoria);
         $this->marca = $marca;
         $this->peso = $peso;
@@ -16,7 +17,11 @@ class Mangime extends Prodotto {
         $this->description = $description;
         $this->prezzo = $prezzo;
     }
-
 }
+
+
+
+
+
 
 
