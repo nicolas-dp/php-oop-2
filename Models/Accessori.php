@@ -20,7 +20,7 @@ class Accessori extends Prodotto {
     public function getSconto(Utente $is_registered)
     {
        if ($is_registered) {
-           $this->prezzo =  $prezzo * 0.2;
+           $this->prezzo * 0.2;
        }
     }
 

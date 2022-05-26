@@ -20,7 +20,17 @@ include __DIR__ . '/db.php'; ?>
 
 <body>
     <div class="container">
-        
+        <div>
+            <?= $prodotti ?>
+        </div>
+
+        <div>
+            <?= $mangime ?>
+        </div>
+
+        <div>
+            <?= $accessori ?>
+        </div>
     </div>
 
 
