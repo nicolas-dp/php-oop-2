@@ -11,7 +11,7 @@ include __DIR__ . '/layout/head.php.';
 <div class="container">
     <div class="categorie text-center">
         <?php foreach ($prodotti as $prodotto) : ?>
-            <a href="/Models/<?= $prodotto->categoria ?>"><?= $prodotto->categoria ?></a>
+            <a class="text-decoration-none p-3" href="./Models<?= $prodotto->categoria ?>"><?= $prodotto->categoria ?></a>
         <?php endforeach ?>
     </div>
 
