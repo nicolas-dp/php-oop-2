@@ -17,13 +17,6 @@ class Mangime extends Prodotto {
         $this->prezzo = $prezzo;
     }
 
-    public function getSconto(Utente $is_registered)
-    {
-       if ($is_registered) {
-           $this->prezzo * 0.2;
-       }
-    }
-
 }
 
 

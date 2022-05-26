@@ -12,4 +12,15 @@ class Prodotto
         $this->nome_prodotto = $nome_prodotto;
         $this->categoria = $categoria;
     }
+
+
+    public function getSconto(Utente $user)
+    {
+        if ($user->is_registered) {
+            var_dump('Utente ha diritto allo sconto');
+            $this->prezzo = $this->prezzo * 0.2;
+        } else {
+            $this->prezzo;
+        }
+    }
 }

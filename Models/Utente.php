@@ -11,6 +11,7 @@ class Utente
 
     function __construct(String $nome, String $last_name, String $email, String $payment, Bool $expire_date_pay, Bool $is_registered)
     {
+
         $this->nome = $nome;
         $this->email = $email;
         $this->payment = $payment;

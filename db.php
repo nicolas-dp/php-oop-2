@@ -6,13 +6,7 @@ include __DIR__ . '/Models/Mangime.php';
 include __DIR__ . '/Models/Accessori.php';
 
 
-$utenti = [
-    new Utente('Nicolas', 'De Palma', 'ciao@gmail.com', 'CDC', true, false),
-    new Utente('Franco', 'Pippo', 'ciao@gmail.com', 'CDC', false, false),
-    new Utente('Gianni', 'Falco', 'falco@gmail.com', 'CDC', true, true)
-];
-
-
+$user = new Utente('Nicolas', 'De Palma', 'ciao@gmail.com', 'CDC', true, true);
 
 
 $prodotti = [
@@ -20,7 +14,7 @@ $prodotti = [
     new Prodotto('Tempo Libero', 'Accessori'),
 ];
 
-var_dump($prodotti);
+//var_dump($prodotti);
 
 
 $mangime =
