@@ -3,30 +3,30 @@ I prodotti saranno oltre al cibo, anche giochi, cucce, etc.
 L'utente potrà sia comprare i prodotti senza registrarsi, oppure iscriversi e ricevere il 20% di sconto su tutti i prodotti.
 Il pagamento avviene con la carta di credito, che non deve essere scaduta. -->
 
-<?php 
+<?php
+include __DIR__ . '/db.php'; ?>
 
-require_once __DIR__ . '/Models/Prodotto.php';
-include __DIR__ . '/Models/Mangime.php';
-include __DIR__ . '/Models/Accessori.php';
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>OOP 2</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="/style.css">
+</head>
 
-$prodotto = new Prodotto('Alimentazione', 'Mangime');
-$prodotto2 = new Prodotto('Tempo Libero', 'Accessori');
-var_dump($prodotto, $prodotto2);
-
-$mangime =
-[
-    new Mangime('Scaglie di pollo', 'Mangime', 'Next', 12, [' pollo 11%', 'mais', 'riso soffiato 10%', 'frumento', 'grassi animali', 'polpa di barbabietola'], 'Le gustose crocchette Next Normal Maxi sono un alimento completo e funzionale, appositamente studiato per soddisfare le esigenze nutrizionali di cani di taglia grande. Next Dog Normal Maxi è un cibo secco di altissimo valore nutrizionale e presenta un’elevata appetibilità per il tuo amico a quattro zampe', 15, false)
-
-];
-
-var_dump($mangime);
-
-$accessori = [
-    new Accessori('Ciotole', 'Accessori', 'YES!', 'Ciotola Black Stone Nera', 'Acciaio', 'Ciotola per cani e gatti realizzata in acciaio di colore nero. Design moderno e raffinato', 9, false ),
-    new Accessori('Cucce', 'Accessori', 'PET AROUND YOU', 'Materasso per Cane Outdoor Blu', 'Tessuto', 'Il cuscino Outdoor di Pet Around You è un materasso da esterno pensato per il comfort di cani di diverse dimensioni che diventerà la cuccia preferita del tuo amico a quattro zampe.', 46, false )
-
-];
+<body>
+    <div class="container">
+        
+    </div>
 
 
-var_dump($accessori);
+
+    <!-- Bootstrap JavaScript Libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+</body>
+
+</html>

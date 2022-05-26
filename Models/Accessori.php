@@ -7,16 +7,21 @@ class Accessori extends Prodotto {
     public $materiali;
     public $description;
     public $prezzo;
-    public $sconto;
     
-    function __construct(String $nome_prodotto, String $categoria, String $marca, String $modello, String $materiali, String $description, Int $prezzo, bool $sconto) {
-        parent::__construct($nome_prodotto, $categoria, $prezzo, $sconto);
+    function __construct(String $nome_prodotto, String $categoria, String $marca, String $modello, String $materiali, String $description, Int $prezzo) {
+        parent::__construct($nome_prodotto, $categoria);
         $this->marca = $marca;
         $this->modello = $modello;
         $this->materiali = $materiali;
         $this->description = $description;
         $this->prezzo = $prezzo;
-        $this->sconto = $sconto;
+    }
+
+    public function getSconto(Utente $is_registered)
+    {
+       if ($is_registered) {
+           $this->prezzo =  $prezzo * 0.2;
+       }
     }
 
 }
