@@ -1,11 +1,10 @@
-<?php 
+<?php
 
-class Category extends Prodotto{
-
-    protected $categoria;
-
-    public function __construct(String $categoria) {
-        $this->categoria = $categoria;
-      
+class Category
+{
+    public $name;
+    public function __construct(String $name)
+    {
+        $this->name = $name;
     }
 }
