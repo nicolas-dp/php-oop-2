@@ -15,7 +15,7 @@ class Prodotto
     public $description;
     
 
-    function __construct(String $nome_prodotto, Category $category, String $categoria, $prezzo, String $marca, Int $peso, String $image, array $composizione, String $description)
+    function __construct(String $nome_prodotto, Category $category, Int $prezzo, String $marca, Int $peso, String $image, array $composizione, String $description)
     {
         $this->nome_prodotto = $nome_prodotto;
         $this->category = $category;

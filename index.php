@@ -25,7 +25,7 @@ include __DIR__ . '/Models/ProvaEccezione.php';
                         <div class="card-body d-flex flex-wrap flex-column">
                             <div class="card-title">
                                 <h4><?= $prodotto->nome_prodotto ?></h4>
-                                <small>"<?= $prodotto->categoria ?>"</small>
+                                <small>"<?= $prodotto->category->name ?>"</small>
                             </div>
                             <div class="card-text d-flex flex-column">
                                 <strong><?= $prodotto->marca ?></strong>
