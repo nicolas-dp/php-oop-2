@@ -1,6 +1,6 @@
 <?php
-
-
+/* Includiamo il trait sconto */
+include __DIR__ . '/TraitSconto.php';
 
 class Prodotto
 {
@@ -25,20 +25,11 @@ class Prodotto
         $this->description = $description;
     }
 
-    public function getSconto(Utente $user)
-    {       
-        
-        if ($user->is_registered) {
-            $this->prezzo = $this->prezzo - ($this->prezzo * 20) / 100;
-            return $this->prezzo;
-        } else {
-            return $this->prezzo;
-        }
-    }
+    /* Usiamo il trait TraitSconto  */
+    use Sconto;
 
     public function getMarca()
     {
         return $this->marca;
     }
-    
 }
