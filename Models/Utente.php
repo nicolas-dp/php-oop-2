@@ -2,14 +2,14 @@
 
 class Utente
 {
-    public $is_registered;
+    
     protected $nome;
-    protected $last_name;
     protected $email;
     protected $payment;
     protected $expire_date_pay;
+    public $is_registered;
 
-    function __construct(String $nome, String $last_name, String $email, String $payment, Bool $expire_date_pay, Bool $is_registered)
+    function __construct(String $nome, String $email, String $payment, Bool $expire_date_pay, Bool $is_registered)
     {
 
         $this->nome = $nome;
