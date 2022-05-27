@@ -28,8 +28,4 @@ class Prodotto
     /* Usiamo il trait TraitSconto  */
     use Sconto;
 
-    public function getMarca()
-    {
-        return $this->marca;
-    }
 }
