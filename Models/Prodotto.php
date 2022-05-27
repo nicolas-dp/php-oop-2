@@ -30,30 +30,4 @@ class Prodotto
     /* Usiamo il trait TraitSconto  */
     use Sconto;
 
-    public function underScount(Utente $user)
-    {
-        if(!is_int($user->age)) {
-            throw new Exception ('Aweeee ' . $user->age . ' non è un numero!!!');
-        } if ($user->age < 18) {
-            $this->prezzo = $this->prezzo - ($this->prezzo / 50) * 100;
-            return $this->prezzo;
-        } else {
-            return $this->prezzo;
-        }
-
-    }
-}
-
-
-//Creamo l'istanza per verificare l'eccezzione 
-//$obj = new Prodotto('Cuccia', 'Accessori', 20, 'PET AROUND YOU', 1.8, 'https://picsum.photos/200/300', ['Legno'], 'Cuccia per estero');
-
-try {
-    $obj->underScount($user->age);
-    //se è un numero diamo conferma
-    echo "E' un numero intero";
-}
-//cathing dell'eccezione
-catch (Exception $e) {
-    echo $e->getMessage();
 }

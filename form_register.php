@@ -1,6 +1,47 @@
 <?php
 include __DIR__ . '/db.php';
 include __DIR__ . '/layout/head.php.';
+
+$nome = $_POST['nome'];
+$cognome = $_POST['cognome'];
+$email = $_POST['email'];
+
+/* $user = 
+[  
+    new Utente($_POST['nome'], $_POST['cognome'], 
+
+]; */
+
+var_dump($nome, $cognome, $email);
+class provaEccezione {
+
+    //creiamo la funzione 
+    public function isEmpty($nome) {
+      if(!is_null($nome)) 
+      {
+        //stabiliamo le modalità di gestione dell'errore
+        throw new Exception ('Aweeee ' . $nome . ' non può essere null!!!');
+      }
+    }
+    
+    }
+    
+    //Creamo l'istanza
+    $obj = new provaEccezione;
+    
+    //proviamo a far giarare la funzione passando un dato non numerico
+    try {
+    $obj -> isEmpty($nome);
+    //se il numero è intero diamo conferma
+    echo "OK va bene";
+    } 
+    
+    //cathing dell'eccezione
+    catch (Exception $e) {
+    echo $e -> getMessage();
+    }
+
+
 ?>
 
 <div class="button-home">
@@ -9,10 +50,10 @@ include __DIR__ . '/layout/head.php.';
 </div>
 <div class="container">
     <h2 class="text-center">Registra il tuo Account</h2>
-    <form class="row g-3 p-5">
+    <form method="post" class="row g-3 p-5" >
         <div class="col-md-6">
             <label for="inputName" class="form-label">Nome</label>
-            <input type="text" class="form-control" id="inputName" placeholder="Nome">
+            <input type="text" class="form-control" id="inputName" placeholder="Nome" name="nome">
         </div>
         <div class="col-md-6">
             <label for="inputLastName" class="form-label">Cognome</label>
